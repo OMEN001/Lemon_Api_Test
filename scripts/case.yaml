@@ -1,0 +1,18 @@
+excel:
+  cases_path: "cases.xlsx"
+  result_col: 5
+msg:
+  success_result: Success
+  fail_result: Fail
+log:
+  log_name: cases
+  logger_level: DEBUG
+  formatter: '%(asctime)s - [%(filename)s-->line:%(lineno)d] - %(levelname)s: %(message)s'
+  stream_level: DEBUG
+  logfile_name: test.log
+  logfile_level: DEBUG
+report:
+  name: report
+  title: "自动化测试23期的优秀报告"
+  description: "这是一个美轮美奂的报告"
+  tester: "最后一个肉包"
