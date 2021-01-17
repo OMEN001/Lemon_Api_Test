@@ -1,1 +1,15 @@
-borrower: 自动化测试报告
+admin:
+  id: 10198056
+  mobile_phone: '18387195430'
+  pwd: '12345678'
+  reg_name: admin
+borrower:
+  id: 10198057
+  mobile_phone: '18302941657'
+  pwd: '12345678'
+  reg_name: borrower
+investor:
+  id: 10198058
+  mobile_phone: '18351427096'
+  pwd: '12345678'
+  reg_name: invenstor
