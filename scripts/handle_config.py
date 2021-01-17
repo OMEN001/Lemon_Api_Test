@@ -35,6 +35,7 @@ class HandleConfig:
         with open(filename, "w", encoding="utf8") as file:
             config.write(file)
 
+
 if __name__ == '__main__':
     handle = HandleConfig("conf1.conf")
     handle.get("excel","cases_path")

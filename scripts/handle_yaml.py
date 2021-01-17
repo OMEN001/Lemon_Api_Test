@@ -3,10 +3,12 @@
 # @Author : 86187
 import yaml
 
+from scripts.handle_path import CONFIGS_FILE_PATH
+
 class HandleYaml:
 
     """初始化函数"""
-    def __init__(self,filename):
+    def __init__ (self,filename):
         with open(filename,encoding="utf8") as one:
             self.data = yaml.full_load(one)
 
@@ -19,18 +21,26 @@ class HandleYaml:
         """
         return self.data[section][option]
 
-
     @staticmethod
     def write(data,filename):
-        with open(filename,"w",encoding="utf8") as one:
-            yaml.dump(data,one,allow_unicode=True)
+        """
+        :param data:
+        :param filename:
+        :return:
+        """
+        with open(filename, mode="w", encoding="utf-8") as one_file:
+            yaml.dump(data, one_file, allow_unicode=True)
+
+
+do_yaml = HandleYaml(CONFIGS_FILE_PATH)
 
 if __name__ == '__main__':
-    handle = HandleYaml("case.yaml")
-    res = handle.read("log","log_name")
-    print(res)
-    data = {
-        "excel":{"cases_path":"cases.xlsx", "result_col": 5},
-        "msg":{"success_result": "Success","fail_result": "Fail"}}
-    handle.write(data,"cases.yaml")
+    # handle = HandleYaml("case.yaml")
+    # res = handle.read("log","log_name")
+    # print(res)
+    # data = {
+    #     "excel":{"cases_path":"cases.xlsx", "result_col": 5},
+    #     "msg":{"success_result": "Success","fail_result": "Fail"}}
+    # handle.write(data,"cases.yaml")
+    print(do_yaml.read("report","name"))
 

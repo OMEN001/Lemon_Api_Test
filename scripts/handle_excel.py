@@ -4,6 +4,9 @@
 import openpyxl
 import os
 
+from scripts.handle_yaml import do_yaml
+from scripts.handle_path import DATAS_DIR
+
 class Case_Data:
     """创建这个类通过动态设置类属性，以对象的方式保存数据"""
     pass
@@ -11,8 +14,11 @@ class Case_Data:
 class HandleExcel:
 
     """初始化函数用于创建实例属性"""
-    def __init__(self,filename,sheetname):
-        self.filename = filename
+    def __init__(self,sheetname,filename = None):
+        if filename is None:
+            self.filename =os.path.join(DATAS_DIR,do_yaml.read("excel","cases_path"))
+        else:
+            self.filename = filename
         self.sheetname = sheetname
 
     # 打开工作簿
@@ -21,7 +27,7 @@ class HandleExcel:
         self.sh = self.wb[self.sheetname]
 
     # 读取数据
-    def read_data(self):
+    def read_data(self) -> object:
         # 代开工作簿
         self.open()
         #按行获取表单中所有格子
@@ -79,13 +85,13 @@ class HandleExcel:
         self.wb.save(self.filename)
         #关闭工作簿
         self.wb.close()
+
 if __name__ == '__main__':
+
     one = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    two = os.path.dirname(os.getcwd())
-    print(two)
     datas = os.path.join(one,"data")
     datas1 = os.path.join(datas,"cases.xlsx")
-    do_excle = HandleExcel(datas1,"register")
+    do_excle = HandleExcel("register")
     do_excle.read_data_obj()
 
 

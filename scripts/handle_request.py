@@ -65,27 +65,28 @@ class HandleRequest:
     def close(self):
         # 关闭回话对象
         self.one_session.close()
+
 # do_request = HandleRequest()
 
-if __name__ == '__main__':
-    # 1. 构造请求的url
-    login_url = "http://api.lemonban.com/futureloan/member/login"
-
-    # 2. 创建请求参数
-    headers = {
-        "User-Agent": "Mozilla/5.0 BaLiang",
-        "X-Lemonban-Media-Type": "lemonban.v2"
-    }
-
-    login_params = {
-        "mobile_phone": "18244446667",
-        "pwd": "12345678",
-    }
-
-    # 3. 执行登录
-    do_request = HandleRequest()  # 创建HandleRequest对象
-    do_request.add_headers(headers)  # 添加公共请求头
-    login_res = do_request.send(login_url, data=login_params)
+# if __name__ == '__main__':
+#     # 1. 构造请求的url
+#     login_url = "http://api.lemonban.com/futureloan/member/login"
+#
+#     # 2. 创建请求参数
+#     headers = {
+#         "User-Agent": "Mozilla/5.0 BaLiang",
+#         "X-Lemonban-Media-Type": "lemonban.v2"
+#     }
+#
+#     login_params = {
+#         "mobile_phone": "18244446667",
+#         "pwd": "12345678",
+#     }
+#
+#     # 3. 执行登录
+#     do_request = HandleRequest()  # 创建HandleRequest对象
+#     do_request.add_headers(headers)  # 添加公共请求头
+#     login_res = do_request.send(login_url, data=login_params)
 
 
 
