@@ -3,21 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c88b84c1-351f-40db-b2fa-fcd8ae872a0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/cases.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/20210117121751_Api_Test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/20210117122251_Api_Test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/20210117122445_Api_Test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/20210117123050_Api_Test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/20210117123131_Api_Test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_20210116213849.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_20210116223850.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_20210117121212.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_20210117121751.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_20210117122251.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_20210117122445.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_20210117123050.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report_20210117123131.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +27,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/Lemon_Api_Web_Content/Python_Project/python_interface_content" />
+    <property name="last_opened_file_path" value="E:/Lemon_Api_Web_Content" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/cases" />
   </component>
@@ -309,6 +294,8 @@
       <workItem from="1610717152647" duration="6155000" />
       <workItem from="1610723412414" duration="32486000" />
       <workItem from="1610892779888" duration="1710000" />
+      <workItem from="1610894820067" duration="386000" />
+      <workItem from="1610895296621" duration="711000" />
     </task>
     <task id="LOCAL-00001" summary="前程贷自动化框架代码">
       <created>1610554956925</created>
@@ -324,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610555218221</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="管理员、借款人、投资人账户号创建">
+      <created>1610894887186</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610894887186</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +342,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="前程贷自动化框架代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="前程贷自动化框架代码" />
+    <MESSAGE value="管理员、借款人、投资人账户号创建" />
+    <option name="LAST_COMMIT_MESSAGE" value="管理员、借款人、投资人账户号创建" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
