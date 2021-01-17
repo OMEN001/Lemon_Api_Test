@@ -56,3 +56,4 @@ with open(result_full_path,"wb") as one:
                             tester=do_yaml.read("report","tester"))
     # 运行测试用例.0
     runner.run(suite)
+

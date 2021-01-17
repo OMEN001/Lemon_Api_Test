@@ -4,18 +4,20 @@
     <list default="true" id="c88b84c1-351f-40db-b2fa-fcd8ae872a0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/cases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/cases.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20210117121751_Api_Test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20210117122251_Api_Test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20210117122445_Api_Test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20210117123050_Api_Test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/20210117123131_Api_Test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_20210116213849.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_20210116223850.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_20210117121212.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_20210117121751.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_20210117122251.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_20210117122445.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_20210117123050.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_20210117123131.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/case.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/case.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/cases.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/conf1.conf" beforeDir="false" afterPath="$PROJECT_DIR$/configs/conf1.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/conf2.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/handle_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/handle_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_excel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/handle_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/handle_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_path.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/handle_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/handle_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_yaml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/test.log" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python.handle_user">
     <configuration name="handle_config" type="PythonConfigurationType" factoryName="Python">
       <module name="Lemon_Api_Test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,7 +196,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="handle_request" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="handle_user" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Lemon_Api_Test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -207,7 +209,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/handle_request.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/handle_user.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -284,11 +286,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.handle_user" />
         <item itemvalue="Python.test_01_register" />
         <item itemvalue="Python.handle_parameterize" />
         <item itemvalue="Python.handle_mysql" />
         <item itemvalue="Python.handle_path" />
-        <item itemvalue="Python.handle_request" />
       </list>
     </recent_temporary>
   </component>
@@ -305,7 +307,8 @@
       <workItem from="1610547013996" duration="9105000" />
       <workItem from="1610556225655" duration="569000" />
       <workItem from="1610717152647" duration="6155000" />
-      <workItem from="1610723412414" duration="24160000" />
+      <workItem from="1610723412414" duration="32486000" />
+      <workItem from="1610892779888" duration="1710000" />
     </task>
     <task id="LOCAL-00001" summary="前程贷自动化框架代码">
       <created>1610554956925</created>
@@ -347,12 +350,24 @@
     <MESSAGE value="前程贷自动化框架代码" />
     <option name="LAST_COMMIT_MESSAGE" value="前程贷自动化框架代码" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_yaml.coverage" NAME="handle_yaml Coverage Results" MODIFIED="1610803016806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_excel.coverage" NAME="handle_excel Coverage Results" MODIFIED="1610818250880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_request.coverage" NAME="handle_request Coverage Results" MODIFIED="1610638663895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_path.coverage" NAME="handle_path Coverage Results" MODIFIED="1610803306265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Lemon_Api_Test$run.coverage" NAME="run Coverage Results" MODIFIED="1610857890971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Lemon_Api_Test$run.coverage" NAME="run Coverage Results" MODIFIED="1610858665501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_user.coverage" NAME="handle_user Coverage Results" MODIFIED="1610894427059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_log.coverage" NAME="handle_log Coverage Results" MODIFIED="1610720818116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_parameterize.coverage" NAME="handle_parameterize Coverage Results" MODIFIED="1610854371585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_config.coverage" NAME="handle_config Coverage Results" MODIFIED="1610554256551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
