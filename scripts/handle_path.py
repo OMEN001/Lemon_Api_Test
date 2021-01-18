@@ -11,6 +11,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # 获取配置文件所在的路径
 CONFIGS_DIR = os.path.join(BASE_DIR, "configs")
 CONFIGS_FILE_PATH = os.path.join(CONFIGS_DIR,"case.yaml")
+# 用户文件保存路劲
+CONFIGS_USER_FILE_PATH = os.path.join(CONFIGS_DIR,"user.yaml")
 
 #获取日志文件所在的目录路径
 LOGS_DIR = os.path.join(BASE_DIR,"logs")

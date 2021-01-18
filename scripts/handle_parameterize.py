@@ -4,10 +4,13 @@
 import re
 
 from scripts.handle_mysql import HandleMysql
+from scripts.handle_yaml import HandleYaml
+from scripts.handle_path import CONFIGS_USER_FILE_PATH
 
 class Parameterize:
 
     not_existed_tel_pattern = r'{not_existed_tel}'
+    existed_tel_pattern = r'{invest_user_tel}'
 
     @classmethod
     def to_param(cls,data):
@@ -15,6 +18,10 @@ class Parameterize:
             do_mysql = HandleMysql()
             data = re.sub(cls.not_existed_tel_pattern,do_mysql.create_not_existed_mobile(),data)
             do_mysql.close()
+
+        if re.search(cls.existed_tel_pattern,data):
+            doyaml = HandleYaml(CONFIGS_USER_FILE_PATH)
+            data = re.sub(cls.existed_tel_pattern,doyaml.read("investor","mobile_phone"),data)
 
         return data
 

@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c88b84c1-351f-40db-b2fa-fcd8ae872a0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/user.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/cases.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/handle_parameterize.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_parameterize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/handle_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/handle_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/handle_user.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +32,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/Lemon_Api_Web_Content" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/cases" />
   </component>
@@ -48,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.handle_user">
+  <component name="RunManager" selected="Python.run">
     <configuration name="handle_config" type="PythonConfigurationType" factoryName="Python">
       <module name="Lemon_Api_Test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -296,6 +301,7 @@
       <workItem from="1610892779888" duration="1710000" />
       <workItem from="1610894820067" duration="386000" />
       <workItem from="1610895296621" duration="711000" />
+      <workItem from="1610972519248" duration="1019000" />
     </task>
     <task id="LOCAL-00001" summary="前程贷自动化框架代码">
       <created>1610554956925</created>
@@ -361,8 +367,8 @@
     <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_excel.coverage" NAME="handle_excel Coverage Results" MODIFIED="1610818250880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_request.coverage" NAME="handle_request Coverage Results" MODIFIED="1610638663895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_path.coverage" NAME="handle_path Coverage Results" MODIFIED="1610803306265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
-    <SUITE FILE_PATH="coverage/Lemon_Api_Test$run.coverage" NAME="run Coverage Results" MODIFIED="1610858665501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_user.coverage" NAME="handle_user Coverage Results" MODIFIED="1610894838814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_user.coverage" NAME="handle_user Coverage Results" MODIFIED="1610973136001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/Lemon_Api_Test$run.coverage" NAME="run Coverage Results" MODIFIED="1610973642945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_log.coverage" NAME="handle_log Coverage Results" MODIFIED="1610720818116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_parameterize.coverage" NAME="handle_parameterize Coverage Results" MODIFIED="1610854371585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/Lemon_Api_Test$handle_config.coverage" NAME="handle_config Coverage Results" MODIFIED="1610554256551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />

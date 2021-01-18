@@ -6,7 +6,7 @@ import os
 from scripts.handle_request import HandleRequest
 from scripts.handle_mysql import HandleMysql
 from scripts.handle_yaml import do_yaml
-from scripts.handle_path import CONFIGS_DIR
+from scripts.handle_path import CONFIGS_USER_FILE_PATH
 
 
 # 创建mysql对象
@@ -14,9 +14,6 @@ do_mysql = HandleMysql()
 
 # 构造请求url
 url = do_yaml.read("api","profix") +"/member/register"
-
-# 用户文件保存路劲
-CONFIGS_FILE_PATH1 = os.path.join(CONFIGS_DIR,"user.yaml")
 
 # 构造公共请求头
 header = {
@@ -73,7 +70,7 @@ user_account["investor"]["pwd"] = "12345678"
 
 
 #将数据写入指定文件
-do_yaml.write(user_account,CONFIGS_FILE_PATH1)
+do_yaml.write(user_account,CONFIGS_USER_FILE_PATH)
 
 # 关闭连接
 do_mysql.close()
