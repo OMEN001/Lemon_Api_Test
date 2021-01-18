@@ -116,19 +116,19 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">自动化测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> BaLiang</p>
-<p class='attribute'><strong>开始时间 : </strong> 2021-01-18 20:36:59</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 1，错误 1，通过率= 0.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2021-01-18 22:55:18</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:01.820983</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 6，通过 6，通过率= 100.00%</p>
 
 <p class='description'>前程贷项目自动化测试报告</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 0.00% }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 0 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 1 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 6 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 6 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -148,58 +148,52 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='errorClass warning'>
-    <td>unittest.loader._FailedTest</td>
-    <td class="text-center">1</td>
+<tr class='passClass warning'>
+    <td>test_02_login.TestLogin</td>
+    <td class="text-center">6</td>
+    <td class="text-center">6</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center">1</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',6)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-<tr id='ft1_1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_01_register</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse in" align="left">
-    <pre>
-    
-ft1_1: ImportError: Failed to import test module: test_01_register
-Traceback (most recent call last):
-  File "D:\python\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "D:\python\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "E:\Workspace\Lemon_Api_Test\cases\test_01_register.py", line 12, in &lt;module&gt;
-    from scripts.handle_log import do_log
-  File "E:\Workspace\Lemon_Api_Test\scripts\handle_log.py", line 46, in &lt;module&gt;
-    do_log = HandleLog.create_log()
-  File "E:\Workspace\Lemon_Api_Test\scripts\handle_log.py", line 36, in create_log
-    fh = logging.FileHandler(filename = os.path.join(LOGS_DIR,filepath),encoding="utf8")
-  File "D:\python\lib\logging\__init__.py", line 1087, in __init__
-    StreamHandler.__init__(self, self._open())
-  File "D:\python\lib\logging\__init__.py", line 1116, in _open
-    return open(self.baseFilename, self.mode, encoding=self.encoding)
-FileNotFoundError: [Errno 2] No such file or directory: 'E:\\Workspace\\Lemon_Api_Test\\logs\\20210118203659_Api_Test.log'
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_1: 正常登录</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
 
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_2: 手机号为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
 
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_3: 密码为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
 
-    </pre>
-    </div>
-    </td>
+<tr id='pt1_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_4: 密码错误</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_5: 手机号错误</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_6: 手机号未注册</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>1</td>
+    <td>6</td>
+    <td>6</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
-    <td>通过率：0.00%</td>
+    <td>通过率：100.00%</td>
 </tr>
 </table>
 

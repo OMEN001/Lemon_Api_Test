@@ -71,7 +71,6 @@ class HandleExcel:
                 setattr(case,c[0],c[1])
             # 将该行的用例数据加入到cases中
             cases.append(case)
-        print(cases)
         self.wb.close()
         return cases
 

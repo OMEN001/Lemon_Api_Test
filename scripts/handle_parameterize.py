@@ -11,6 +11,8 @@ class Parameterize:
 
     not_existed_tel_pattern = r'{not_existed_tel}'
     existed_tel_pattern = r'{invest_user_tel}'
+    existed_tel_pattern_pwd = r'{invest_user_pwd}'
+    error_user_pwd = r'{invest_user_pwd}8'
 
     @classmethod
     def to_param(cls,data):
@@ -22,6 +24,15 @@ class Parameterize:
         if re.search(cls.existed_tel_pattern,data):
             doyaml = HandleYaml(CONFIGS_USER_FILE_PATH)
             data = re.sub(cls.existed_tel_pattern,doyaml.read("investor","mobile_phone"),data)
+
+        if re.search(cls.existed_tel_pattern_pwd,data):
+            doyaml = HandleYaml(CONFIGS_USER_FILE_PATH)
+            data = re.sub(cls.existed_tel_pattern_pwd,doyaml.read("investor","pwd"),data)
+
+        if re.search(cls.error_user_pwd,data):
+            do_mysql = HandleMysql()
+            data = re.sub(cls.error_user_pwd,do_mysql.create_not_existed_mobile(),data)
+            do_mysql.close()
 
         return data
 

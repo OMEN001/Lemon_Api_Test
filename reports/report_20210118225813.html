@@ -116,9 +116,9 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">自动化测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> BaLiang</p>
-<p class='attribute'><strong>开始时间 : </strong> 2021-01-18 20:40:43</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:04.135726</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 10，通过 10，通过率= 100.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2021-01-18 22:58:13</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:06.048247</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 16，通过 16，通过率= 100.00%</p>
 
 <p class='description'>前程贷项目自动化测试报告</p>
 </div>
@@ -127,8 +127,8 @@ function html_escape(s) {
 <p id='show_detail_line'>
 <a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 10 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 10 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 16 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 16 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -207,10 +207,49 @@ function html_escape(s) {
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
+<tr class='passClass warning'>
+    <td>test_02_login.TestLogin</td>
+    <td class="text-center">6</td>
+    <td class="text-center">6</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',6)" class="detail" id='c2'>详细</a></td>
+</tr>
+
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_1: 正常登录</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt2_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_2: 手机号为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt2_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_3: 密码为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt2_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_4: 密码错误</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt2_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_5: 手机号错误</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt2_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_6: 手机号未注册</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>10</td>
-    <td>10</td>
+    <td>16</td>
+    <td>16</td>
     <td>0</td>
     <td>0</td>
     <td>通过率：100.00%</td>

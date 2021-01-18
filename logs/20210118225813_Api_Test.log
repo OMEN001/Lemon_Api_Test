@@ -1,0 +1,32 @@
+2021-01-18 22:58:14,192 - test_01_register.py[line:98] - INFO: 成功注册-完整, 执行的结果为: Success
+
+2021-01-18 22:58:14,766 - test_01_register.py[line:98] - INFO: 成功注册-无昵称, 执行的结果为: Success
+
+2021-01-18 22:58:15,294 - test_01_register.py[line:98] - INFO: 成功注册-昵称超过10, 执行的结果为: Success
+
+2021-01-18 22:58:15,840 - test_01_register.py[line:98] - INFO: 密码为空, 执行的结果为: Success
+
+2021-01-18 22:58:16,062 - test_01_register.py[line:98] - INFO: 手机号为空, 执行的结果为: Success
+
+2021-01-18 22:58:16,265 - test_01_register.py[line:98] - INFO: 手机号-不足11位, 执行的结果为: Success
+
+2021-01-18 22:58:16,459 - test_01_register.py[line:98] - INFO: 手机号-超过11位, 执行的结果为: Success
+
+2021-01-18 22:58:16,982 - test_01_register.py[line:98] - INFO: 密码-少于8位, 执行的结果为: Success
+
+2021-01-18 22:58:17,512 - test_01_register.py[line:98] - INFO: 密码-多于16位, 执行的结果为: Success
+
+2021-01-18 22:58:17,768 - test_01_register.py[line:98] - INFO: 手机号已注册, 执行的结果为: Success
+
+2021-01-18 22:58:18,081 - test_02_login.py[line:79] - INFO: 正常登录, 执行的结果为: Success
+
+2021-01-18 22:58:18,281 - test_02_login.py[line:79] - INFO: 手机号为空, 执行的结果为: Success
+
+2021-01-18 22:58:18,487 - test_02_login.py[line:79] - INFO: 密码为空, 执行的结果为: Success
+
+2021-01-18 22:58:18,749 - test_02_login.py[line:79] - INFO: 密码错误, 执行的结果为: Success
+
+2021-01-18 22:58:18,942 - test_02_login.py[line:79] - INFO: 手机号错误, 执行的结果为: Success
+
+2021-01-18 22:58:19,579 - test_02_login.py[line:79] - INFO: 手机号未注册, 执行的结果为: Success
+

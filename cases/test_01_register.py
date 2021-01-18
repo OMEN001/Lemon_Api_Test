@@ -57,7 +57,7 @@ class TestRegister(unittest.TestCase):
         #将响应报文转化为json
         actual_value = res.json()
 
-        #获取响应报文的行号
+        # 获取测试用例行号
         row = case.case_id + 1
 
         #获取预期结果
@@ -65,6 +65,7 @@ class TestRegister(unittest.TestCase):
 
         # 获取测试用例的标题
         msg = case.title
+
         #获取用例成功与失败的提示
         success_msg = do_yaml.read('msg', 'success_result')
         fail_msg = do_yaml.read('msg', 'fail_result')
@@ -100,6 +101,7 @@ class TestRegister(unittest.TestCase):
             self.excel.write_data(row=row,
                                  column=do_yaml.read("excel", "actual_col"),
                                  value=res.text)
+
 
 # if __name__ == '__main__':
 #     unittest.main()
