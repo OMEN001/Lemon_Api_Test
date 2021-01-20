@@ -67,14 +67,15 @@ class HandleMysql:
         # 关闭连接对象
         self.conn.close()
 
-# if __name__ == '__main__':
-    # sql = "select * from member"
-    # do_mysql = HandleMysql()
-    # print(do_mysql.run(sql))
-    # do_mysql.close()
-    # print(do_mysql.create_mobile())
-    # print(do_mysql.create_not_existed_mobile())
-    # do_mysql.close()
+if __name__ == '__main__':
+    sql = "select max(id) from member;"
+    do_mysql = HandleMysql()
+    max_id = do_mysql.run(sql)
+    print(max_id["max(id)"] + 1)
+
+    do_mysql.close()
+
+
 
 
 

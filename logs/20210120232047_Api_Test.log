@@ -1,0 +1,68 @@
+2021-01-20 23:20:48,265 - test_01_register.py[line:98] - INFO: 成功注册-完整, 执行的结果为: Success
+
+2021-01-20 23:20:48,923 - test_01_register.py[line:98] - INFO: 成功注册-无昵称, 执行的结果为: Success
+
+2021-01-20 23:20:49,452 - test_01_register.py[line:98] - INFO: 成功注册-昵称超过10, 执行的结果为: Success
+
+2021-01-20 23:20:49,996 - test_01_register.py[line:98] - INFO: 密码为空, 执行的结果为: Success
+
+2021-01-20 23:20:50,167 - test_01_register.py[line:98] - INFO: 手机号为空, 执行的结果为: Success
+
+2021-01-20 23:20:50,339 - test_01_register.py[line:98] - INFO: 手机号-不足11位, 执行的结果为: Success
+
+2021-01-20 23:20:50,505 - test_01_register.py[line:98] - INFO: 手机号-超过11位, 执行的结果为: Success
+
+2021-01-20 23:20:51,011 - test_01_register.py[line:98] - INFO: 密码-少于8位, 执行的结果为: Success
+
+2021-01-20 23:20:51,549 - test_01_register.py[line:98] - INFO: 密码-多于16位, 执行的结果为: Success
+
+2021-01-20 23:20:51,835 - test_01_register.py[line:98] - INFO: 手机号已注册, 执行的结果为: Success
+
+2021-01-20 23:20:52,167 - test_02_login.py[line:79] - INFO: 正常登录, 执行的结果为: Success
+
+2021-01-20 23:20:52,352 - test_02_login.py[line:79] - INFO: 手机号为空, 执行的结果为: Success
+
+2021-01-20 23:20:52,537 - test_02_login.py[line:79] - INFO: 密码为空, 执行的结果为: Success
+
+2021-01-20 23:20:52,822 - test_02_login.py[line:79] - INFO: 密码错误, 执行的结果为: Success
+
+2021-01-20 23:20:53,023 - test_02_login.py[line:79] - INFO: 手机号错误, 执行的结果为: Success
+
+2021-01-20 23:20:53,721 - test_02_login.py[line:79] - INFO: 手机号未注册, 执行的结果为: Success
+
+2021-01-20 23:20:54,120 - test_03_recharge.py[line:111] - INFO: 不登录-充值, 执行的结果为: Success
+
+2021-01-20 23:20:54,299 - test_03_recharge.py[line:111] - INFO: 正常登录, 执行的结果为: Success
+
+2021-01-20 23:20:54,661 - test_03_recharge.py[line:111] - INFO: 充值成功-整数, 执行的结果为: Success
+
+2021-01-20 23:20:55,040 - test_03_recharge.py[line:111] - INFO: 充值成功-1位小数, 执行的结果为: Success
+
+2021-01-20 23:20:55,395 - test_03_recharge.py[line:111] - INFO: 充值成功-2位小数, 执行的结果为: Success
+
+2021-01-20 23:20:55,754 - test_03_recharge.py[line:111] - INFO: 充值成功-50万, 执行的结果为: Success
+
+2021-01-20 23:20:55,927 - test_03_recharge.py[line:111] - INFO: 会员id为空, 执行的结果为: Success
+
+2021-01-20 23:20:56,388 - test_03_recharge.py[line:97] - ERROR: 会员id不存在, 执行的结果为: Fail
+具体异常为: 1007 != 1001 : 会员id不存在
+
+2021-01-20 23:20:56,570 - test_03_recharge.py[line:97] - ERROR: 会员id为字符串, 执行的结果为: Fail
+具体异常为: 0 != 2 : 会员id为字符串
+
+2021-01-20 23:20:56,743 - test_03_recharge.py[line:111] - INFO: 会员id为小数, 执行的结果为: Success
+
+2021-01-20 23:20:56,934 - test_03_recharge.py[line:97] - ERROR: 充值金额为0, 执行的结果为: Fail
+具体异常为: 0 != 2 : 充值金额为0
+
+2021-01-20 23:20:57,104 - test_03_recharge.py[line:111] - INFO: 充值金额为负数, 执行的结果为: Success
+
+2021-01-20 23:20:57,298 - test_03_recharge.py[line:97] - ERROR: 充值金额为空, 执行的结果为: Fail
+具体异常为: 2 != 1 : 充值金额为空
+
+2021-01-20 23:20:57,474 - test_03_recharge.py[line:111] - INFO: 充值金额-3位小数, 执行的结果为: Success
+
+2021-01-20 23:20:57,638 - test_03_recharge.py[line:111] - INFO: 充值金额-大于50万, 执行的结果为: Success
+
+2021-01-20 23:20:57,815 - test_03_recharge.py[line:111] - INFO: 充值金额-非数字, 执行的结果为: Success
+
