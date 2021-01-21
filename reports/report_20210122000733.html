@@ -116,19 +116,19 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">自动化测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> BaLiang</p>
-<p class='attribute'><strong>开始时间 : </strong> 2021-01-21 00:10:49</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:12.852242</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 48，通过 42，失败 6，通过率= 87.50%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2021-01-22 00:07:33</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:17.333732</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 66，通过 60，失败 6，通过率= 90.91%</p>
 
 <p class='description'>前程贷项目自动化测试报告</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 87.50% }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 90.91% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 6 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 42 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 48 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 60 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 66 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -550,13 +550,112 @@ AssertionError: 2 != 1007 : 借款人id为小数
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
+<tr class='passClass warning'>
+    <td>test_05_invest.TestInvest</td>
+    <td class="text-center">18</td>
+    <td class="text-center">18</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c5',18)" class="detail" id='c5'>详细</a></td>
+</tr>
+
+<tr id='pt5_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_01: 借款人正常登录</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_02: 借款人加标</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_03: 管理员正常登录</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_04: 管理员审核</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_05: 投资人正常登录</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_06: 投资人正常投资</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_07: 投资人id为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_08: 标id为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_09: 投资金额为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_10: 投资人id为负数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_11' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_11: 投资人id为字符串</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_12' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_12: 标id为负数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_13' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_13: 标id为字符串</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_14' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_14: 投资金额为负数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_15' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_15: 投资金额为不能被100整除的数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_16' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_16: 投资人id不存在</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_17' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_17: 标id不存在</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_18' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_18: 投资金额大于项目的剩余可投金额</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>48</td>
-    <td>42</td>
+    <td>66</td>
+    <td>60</td>
     <td>6</td>
     <td>0</td>
-    <td>通过率：87.50%</td>
+    <td>通过率：90.91%</td>
 </tr>
 </table>
 

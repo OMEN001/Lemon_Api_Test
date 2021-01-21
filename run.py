@@ -32,11 +32,11 @@ loder = unittest.TestLoader()
 
 # 第二种方法：将测试用例类中所有的测试用例，加入到测试套件
 # loader = unittest.TestLoader()
-# suite.addTest(loader.loadTestsFromTestCase(TestRegister))
+# suite.addTest(loader.loadTestsFromTestCase(TestInvest))
 
 # 第三种方法：将一个模块中的所有测试用例 加载到测试套件
 # loader = unittest.TestLoader()
-# suite.addTest(loader.loadTestsFromModule(test_01_register))
+# suite.addTest(loader.loadTestsFromModule("E:\Workspace\Lemon_Api_Test\cases\test_05_invest.py"))
 
 # 第四种方法：通过一个目录，去导入该目录下的所有模块种的测试用例
 # discover方法可以控制测试用例目录下测试用例模块的执行顺序，默认执行测试用例目录下test*.py文件（test后的ascii码越小最先执行）

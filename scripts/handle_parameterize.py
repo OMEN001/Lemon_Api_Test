@@ -23,6 +23,11 @@ class Parameterize:
     borrow_user_id = r'{borrow_user_id}'
     borrow_user_tel = r'{borrow_user_tel}'
     borrow_user_pwd = r'{borrow_user_pwd}'
+    admin_user_tel = r'{admin_user_tel}'
+    admin_user_pwd = r'{admin_user_pwd}'
+    not_existed_loan_id = r'{not_existed_loan_id}'
+    loan_id_pattern = r'{loan_id}'
+
 
 
     @classmethod
@@ -75,6 +80,20 @@ class Parameterize:
         if re.search(cls.borrow_user_pwd,data):
             # doyaml = HandleYaml(CONFIGS_USER_FILE_PATH)
             data = re.sub(cls.borrow_user_pwd,cls.doyaml.read("borrower","pwd"),data)
+
+        if re.search(cls.admin_user_tel,data):
+            data = re.sub(cls.admin_user_tel,cls.doyaml.read("admin","mobile_phone"),data)
+
+        if re.search(cls.admin_user_pwd,data):
+            data = re.sub(cls.admin_user_pwd,cls.doyaml.read("admin","pwd"),data)
+
+        if re.search(cls.loan_id_pattern,data):
+            loan_id = getattr(cls ,"loan_id")
+            data = re.sub(cls.loan_id_pattern,str(loan_id),data)
+
+        if re.search(cls.not_existed_loan_id,data):
+            loan_id = getattr(cls,"loan_id")
+            data = re.sub(cls.not_existed_loan_id,str(loan_id + 1) ,data)
 
         return data
 
