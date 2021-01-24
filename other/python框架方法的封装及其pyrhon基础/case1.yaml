@@ -1,0 +1,6 @@
+excel:
+  cases_path: cases.xlsx
+  result_col: 5
+msg:
+  fail_result: Fail
+  success_result: Success

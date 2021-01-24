@@ -20,9 +20,7 @@ class TestRegister(unittest.TestCase):
     测试用例类的调试方法（1）鼠标放在测试用例类上右键run或者debug
                     (2)使用if __name__ == '__main__':
                             unittest.main()  运行
-
     """
-
     # 创建HandleExcel
     excel = HandleExcel('register')
     # 读取excel中register表单下的所有数据

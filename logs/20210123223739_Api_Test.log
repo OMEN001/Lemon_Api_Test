@@ -1,0 +1,138 @@
+2021-01-23 22:37:40,468 - test_01_register.py[line:98] - INFO: 成功注册-完整, 执行的结果为: Success
+
+2021-01-23 22:37:41,067 - test_01_register.py[line:98] - INFO: 成功注册-无昵称, 执行的结果为: Success
+
+2021-01-23 22:37:41,579 - test_01_register.py[line:98] - INFO: 成功注册-昵称超过10, 执行的结果为: Success
+
+2021-01-23 22:37:42,106 - test_01_register.py[line:98] - INFO: 密码为空, 执行的结果为: Success
+
+2021-01-23 22:37:42,290 - test_01_register.py[line:98] - INFO: 手机号为空, 执行的结果为: Success
+
+2021-01-23 22:37:42,475 - test_01_register.py[line:98] - INFO: 手机号-不足11位, 执行的结果为: Success
+
+2021-01-23 22:37:42,659 - test_01_register.py[line:98] - INFO: 手机号-超过11位, 执行的结果为: Success
+
+2021-01-23 22:37:43,170 - test_01_register.py[line:98] - INFO: 密码-少于8位, 执行的结果为: Success
+
+2021-01-23 22:37:43,675 - test_01_register.py[line:98] - INFO: 密码-多于16位, 执行的结果为: Success
+
+2021-01-23 22:37:43,926 - test_01_register.py[line:98] - INFO: 手机号已注册, 执行的结果为: Success
+
+2021-01-23 22:37:44,230 - test_02_login.py[line:79] - INFO: 正常登录, 执行的结果为: Success
+
+2021-01-23 22:37:44,418 - test_02_login.py[line:79] - INFO: 手机号为空, 执行的结果为: Success
+
+2021-01-23 22:37:44,620 - test_02_login.py[line:79] - INFO: 密码为空, 执行的结果为: Success
+
+2021-01-23 22:37:44,887 - test_02_login.py[line:79] - INFO: 密码错误, 执行的结果为: Success
+
+2021-01-23 22:37:45,068 - test_02_login.py[line:79] - INFO: 手机号错误, 执行的结果为: Success
+
+2021-01-23 22:37:45,675 - test_02_login.py[line:79] - INFO: 手机号未注册, 执行的结果为: Success
+
+2021-01-23 22:37:46,123 - test_03_recharge.py[line:111] - INFO: 不登录-充值, 执行的结果为: Success
+
+2021-01-23 22:37:46,305 - test_03_recharge.py[line:111] - INFO: 正常登录, 执行的结果为: Success
+
+2021-01-23 22:37:46,673 - test_03_recharge.py[line:111] - INFO: 充值成功-整数, 执行的结果为: Success
+
+2021-01-23 22:37:47,025 - test_03_recharge.py[line:111] - INFO: 充值成功-1位小数, 执行的结果为: Success
+
+2021-01-23 22:37:47,375 - test_03_recharge.py[line:111] - INFO: 充值成功-2位小数, 执行的结果为: Success
+
+2021-01-23 22:37:47,726 - test_03_recharge.py[line:111] - INFO: 充值成功-50万, 执行的结果为: Success
+
+2021-01-23 22:37:47,899 - test_03_recharge.py[line:111] - INFO: 会员id为空, 执行的结果为: Success
+
+2021-01-23 22:37:48,352 - test_03_recharge.py[line:97] - ERROR: 会员id不存在, 执行的结果为: Fail
+具体异常为: 1007 != 1001 : 会员id不存在
+
+2021-01-23 22:37:48,550 - test_03_recharge.py[line:97] - ERROR: 会员id为字符串, 执行的结果为: Fail
+具体异常为: 0 != 2 : 会员id为字符串
+
+2021-01-23 22:37:48,729 - test_03_recharge.py[line:111] - INFO: 会员id为小数, 执行的结果为: Success
+
+2021-01-23 22:37:48,907 - test_03_recharge.py[line:97] - ERROR: 充值金额为0, 执行的结果为: Fail
+具体异常为: 0 != 2 : 充值金额为0
+
+2021-01-23 22:37:49,081 - test_03_recharge.py[line:111] - INFO: 充值金额为负数, 执行的结果为: Success
+
+2021-01-23 22:37:49,265 - test_03_recharge.py[line:97] - ERROR: 充值金额为空, 执行的结果为: Fail
+具体异常为: 2 != 1 : 充值金额为空
+
+2021-01-23 22:37:49,446 - test_03_recharge.py[line:111] - INFO: 充值金额-3位小数, 执行的结果为: Success
+
+2021-01-23 22:37:49,638 - test_03_recharge.py[line:111] - INFO: 充值金额-大于50万, 执行的结果为: Success
+
+2021-01-23 22:37:49,822 - test_03_recharge.py[line:111] - INFO: 充值金额-非数字, 执行的结果为: Success
+
+2021-01-23 22:37:50,082 - test_04_addition.py[line:76] - INFO: 不登录-加标, 执行的结果为: Success
+
+2021-01-23 22:37:50,330 - test_04_addition.py[line:76] - INFO: 正常登录, 执行的结果为: Success
+
+2021-01-23 22:37:50,508 - test_04_addition.py[line:76] - INFO: 加标成功, 执行的结果为: Success
+
+2021-01-23 22:37:50,688 - test_04_addition.py[line:76] - INFO: 借款人id为空, 执行的结果为: Success
+
+2021-01-23 22:37:50,870 - test_04_addition.py[line:76] - INFO: 标题为空, 执行的结果为: Success
+
+2021-01-23 22:37:51,048 - test_04_addition.py[line:76] - INFO: 借款金额为空, 执行的结果为: Success
+
+2021-01-23 22:37:51,229 - test_04_addition.py[line:76] - INFO: 年利率为空, 执行的结果为: Success
+
+2021-01-23 22:37:51,419 - test_04_addition.py[line:76] - INFO: 借款期限为空, 执行的结果为: Success
+
+2021-01-23 22:37:51,603 - test_04_addition.py[line:63] - ERROR: 借款期限为字符串, 执行的结果为: Fail
+具体异常为: 2 != 0 : 借款期限为字符串
+
+2021-01-23 22:37:51,789 - test_04_addition.py[line:76] - INFO: 借款期限类型为空, 执行的结果为: Success
+
+2021-01-23 22:37:51,967 - test_04_addition.py[line:76] - INFO: 竞标天数为空, 执行的结果为: Success
+
+2021-01-23 22:37:52,164 - test_04_addition.py[line:76] - INFO: 借款人id为负数, 执行的结果为: Success
+
+2021-01-23 22:37:52,348 - test_04_addition.py[line:63] - ERROR: 借款人id为小数, 执行的结果为: Fail
+具体异常为: 2 != 1007 : 借款人id为小数
+
+2021-01-23 22:37:52,816 - test_04_addition.py[line:76] - INFO: 借款人id不存在, 执行的结果为: Success
+
+2021-01-23 22:37:52,997 - test_04_addition.py[line:76] - INFO: 借款金额为负数, 执行的结果为: Success
+
+2021-01-23 22:37:53,178 - test_04_addition.py[line:76] - INFO: 借款金额为小数, 执行的结果为: Success
+
+2021-01-23 22:37:53,621 - test_05_invest.py[line:103] - INFO: 借款人正常登录, 执行的结果为: Success
+
+2021-01-23 22:37:53,912 - test_05_invest.py[line:103] - INFO: 借款人加标, 执行的结果为: Success
+
+2021-01-23 22:37:54,178 - test_05_invest.py[line:103] - INFO: 管理员正常登录, 执行的结果为: Success
+
+2021-01-23 22:37:54,367 - test_05_invest.py[line:103] - INFO: 管理员审核, 执行的结果为: Success
+
+2021-01-23 22:37:54,629 - test_05_invest.py[line:103] - INFO: 投资人正常登录, 执行的结果为: Success
+
+2021-01-23 22:37:54,823 - test_05_invest.py[line:103] - INFO: 投资人正常投资, 执行的结果为: Success
+
+2021-01-23 22:37:55,001 - test_05_invest.py[line:103] - INFO: 投资人id为空, 执行的结果为: Success
+
+2021-01-23 22:37:55,180 - test_05_invest.py[line:103] - INFO: 标id为空, 执行的结果为: Success
+
+2021-01-23 22:37:55,378 - test_05_invest.py[line:103] - INFO: 投资金额为空, 执行的结果为: Success
+
+2021-01-23 22:37:55,555 - test_05_invest.py[line:103] - INFO: 投资人id为负数, 执行的结果为: Success
+
+2021-01-23 22:37:55,736 - test_05_invest.py[line:103] - INFO: 投资人id为字符串, 执行的结果为: Success
+
+2021-01-23 22:37:55,922 - test_05_invest.py[line:103] - INFO: 标id为负数, 执行的结果为: Success
+
+2021-01-23 22:37:56,104 - test_05_invest.py[line:103] - INFO: 标id为字符串, 执行的结果为: Success
+
+2021-01-23 22:37:56,283 - test_05_invest.py[line:103] - INFO: 投资金额为负数, 执行的结果为: Success
+
+2021-01-23 22:37:56,467 - test_05_invest.py[line:103] - INFO: 投资金额为不能被100整除的数, 执行的结果为: Success
+
+2021-01-23 22:37:56,949 - test_05_invest.py[line:103] - INFO: 投资人id不存在, 执行的结果为: Success
+
+2021-01-23 22:37:57,131 - test_05_invest.py[line:103] - INFO: 标id不存在, 执行的结果为: Success
+
+2021-01-23 22:37:57,314 - test_05_invest.py[line:103] - INFO: 投资金额大于项目的剩余可投金额, 执行的结果为: Success
+

@@ -29,7 +29,6 @@ class Parameterize:
     loan_id_pattern = r'{loan_id}'
 
 
-
     @classmethod
     def to_param(cls,data):
         if re.search(cls.not_existed_tel_pattern,data):
@@ -88,7 +87,8 @@ class Parameterize:
             data = re.sub(cls.admin_user_pwd,cls.doyaml.read("admin","pwd"),data)
 
         if re.search(cls.loan_id_pattern,data):
-            loan_id = getattr(cls ,"loan_id")
+            # loan_id = getattr(Parameterize ,"loan_id")
+            loan_id = getattr(cls, "loan_id")
             data = re.sub(cls.loan_id_pattern,str(loan_id),data)
 
         if re.search(cls.not_existed_loan_id,data):

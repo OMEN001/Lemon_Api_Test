@@ -1,0 +1,29 @@
+excel:
+  cases_path: "cases.xlsx"
+  actual_col: 7
+  result_col: 8
+msg:
+  success_result: Success
+  fail_result: Fail
+log:
+  log_name: mylog
+  logger_level: DEBUG
+  formatter: '%(asctime)s - [%(filename)s-->line:%(lineno)d] - %(levelname)s: %(message)s'
+  stream_level: DEBUG
+  logfile_name: Api_Test.log
+  logfile_level: DEBUG
+report:
+  name: report
+  title: "自动化测试报告"
+  description: "前程贷项目自动化测试报告"
+  tester: "BaLiang"
+mysql:
+  host: 'api.lemonban.com'
+  user: 'future'
+  password: '123456'
+  db: 'futureloan'
+  port: 3306
+  sql: "select * from member where mobile_phone = %s;"
+api:
+  version: {"X-Lemonban-Media-Type": "lemonban.v2"}
+  profix: "http://api.lemonban.com/futureloan"
